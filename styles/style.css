@@ -48,6 +48,85 @@ main {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  /* ABSOLUTE POSITIONED ELEMENTS */
+}
+
+main .btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 0.7rem 2.3rem;
+  border-radius: 50rem;
+  -webkit-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+main .btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+main .btn--new {
+  top: 4rem;
+}
+
+main .btn--roll {
+  top: 39.3rem;
+}
+
+main .btn--hold {
+  top: 46.1rem;
+}
+
+main .btn:active {
+  -webkit-transform: translate(-50%, 3px);
+          transform: translate(-50%, 3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+main .btn:focus {
+  outline: none;
+}
+
+main .dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 10rem;
+  -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+main .player--winner {
+  background-color: #2f2f2f;
+}
+
+main .player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+main .hidden {
+  display: none;
 }
 
 section {

@@ -11,8 +11,8 @@
     <main>
       <!-- Player 1 -->
       <section class="left-column">
-        <h2 class="p1 name">Player 1</h2>
-        <p class="p1_Score score">0</p>
+        <h2 class="p1 name" id="name--1">Player 1</h2>
+        <p class="p1_Score score" id="score--1">0</p>
         <div class="current">
           <p class="current-label">Current</p>
           <p class="current-score">0</p>
@@ -20,13 +20,20 @@
       </section>
       <!-- Player 2 -->
       <section class="right-column">
-        <h2 class="p2 name">Player 2</h2>
-        <p class="p2_Score score">0</p>
+        <h2 class="p2 name" id="name--2">Player 2</h2>
+        <p class="p2_Score score" id="score--2">0</p>
         <div class="current">
           <p class="current-label">Current</p>
           <p class="current-score">0</p>
         </div>
       </section>
+
+      <img src="images/dice-5.png" alt="" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
