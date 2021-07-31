@@ -116,6 +116,59 @@ main .dice {
           box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 }
 
+main .dice--winner--left {
+  position: absolute;
+  left: 50%;
+  top: 12.5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 10rem;
+  font-size: 15rem;
+  color: white;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+main .dice--winner--left::before {
+  content: "WINNER!";
+  color: #fcf403;
+  position: absolute;
+  font-weight: bold;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  font-size: 0.2em;
+}
+
+main .dice--winner--right {
+  position: absolute;
+  left: 50%;
+  top: 12.5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 10rem;
+  text-align: center;
+  font-size: 15rem;
+  color: white;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+main .dice--winner--right::before {
+  content: "WINNER!";
+  color: #fcf403;
+  position: absolute;
+  font-weight: bold;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  font-size: 0.2em;
+}
+
 main .player--winner {
   background-color: #2f2f2f;
 }
@@ -190,5 +243,30 @@ section .current .current-score {
   font-size: 3.5rem;
   padding: 0px;
   margin: 0px;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player--active .name {
+  font-weight: 700;
+}
+
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
 }
 /*# sourceMappingURL=style.css.map */
